@@ -14,6 +14,11 @@ public class Order {
 	private Status status;
 	
 	public Order() {}
+
+	public Order(String description, Status status) {
+		this.description = description;
+		this.status = status;
+	}
 	
 	
 
