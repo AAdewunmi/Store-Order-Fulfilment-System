@@ -13,6 +13,8 @@ public class Order {
 	private String description;
 	private Status status;
 	
+	public Order() {}
+	
 	
 
 }
