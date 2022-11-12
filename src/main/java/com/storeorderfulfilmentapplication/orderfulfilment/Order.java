@@ -63,7 +63,10 @@ public class Order {
 		return Objects.equals(description, other.description) && Objects.equals(id, other.id) && status == other.status;
 	}
 
-	
+	 @Override
+	  public String toString() {
+	    return "Order{" + "id=" + this.id + ", description='" + this.description + '\'' + ", status=" + this.status + '}';
+	  }
 	
 	
 
