@@ -1,5 +1,7 @@
 package com.storeorderfulfilmentapplication.orderfulfilment;
 
+import java.util.Objects;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -43,6 +45,25 @@ public class Order {
 	public void setStatus(Status status) {
 		this.status = status;
 	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(description, id, status);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (!(obj instanceof Order)) {
+			return false;
+		}
+		Order other = (Order) obj;
+		return Objects.equals(description, other.description) && Objects.equals(id, other.id) && status == other.status;
+	}
+
+	
 	
 	
 
