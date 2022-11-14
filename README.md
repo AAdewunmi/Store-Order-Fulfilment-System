@@ -12,6 +12,14 @@ Store Order Fulfilment System (A RESTful API for Spring Boot)
 
 #### This is an Store Order Fulfilment RESTful API for Spring Boot, which performs CRUD operations on an in-memory database.
 
+#### CRUD Operations:
+
+- Find all orders
+- Find order by id
+- Create new order
+- Amend an existing order
+- Delete Order 
+
 #### An implementation of a SPRING quide: "Building REST services with Spring".
 
 ## 2. Tech Stack:
