@@ -1,6 +1,13 @@
 package com.storeorderfulfilmentapplication.orderfulfilment;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.hateoas.CollectionModel;
+import org.springframework.hateoas.EntityModel;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 
 @RestController
 public class OrderController {
@@ -13,6 +20,15 @@ public class OrderController {
 		this.assembler = assembler;
 	}
 	
+	@GetMapping("/orders")
+	CollectionModel<EntityModel<Order>> all(){
+		List<EntityModel<Order>> orders = orderRepository.findAll().stream()
+				.map(assembler :: toModel)
+				.collect(Collectors.toList());
+		return CollectionModel.of(orders, linkTo(methodOn(OrderController.class).all()).withSelfRel());
+	}
 	
-
+	
+	
+	
 }
