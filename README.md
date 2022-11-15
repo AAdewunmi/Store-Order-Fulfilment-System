@@ -1,5 +1,3 @@
-# $$\textcolor{red}{\text{UNDER CONSTRUCTION}}$$
-
 # Project Title:
 
 Store Order Fulfilment System (A RESTful API for Spring Boot)
@@ -11,14 +9,6 @@ Store Order Fulfilment System (A RESTful API for Spring Boot)
 > "Orders must go through a certain series of state transitions from the time a customer submits an order and it is either fulfilled or cancelled."
 
 #### This is an Store Order Fulfilment RESTful API for Spring Boot, which performs CRUD operations on an in-memory database.
-
-#### CRUD Operations:
-
-- Find all orders
-- Find order by id
-- Create new order
-- Amend an existing order
-- Delete Order 
 
 #### An implementation of a SPRING quide: "Building REST services with Spring".
 
@@ -33,13 +23,68 @@ Store Order Fulfilment System (A RESTful API for Spring Boot)
 - JSON
 - Postman
 
-## 3. What is the MVP?
-The minimal viable product is a Store Order Fulfilment RESTful API for Spring Boot, which performs CRUD operations on an in-memory database.
+## 3. Installing:
 
-## 4. When will the project be complete? 
-The project will be complete once all the MVP features have been implemented.
+i. Clone the git repo
 
-## 5. Original Creator:
+```
+https://github.com/AAdewunmi/Store-Order-Fulfilment-System.git
+```
+
+ii. Open project folder
+
+iii. Explore
+
+## 4. How To Use
+
+i. Open project in preferred IDE (I'm using SpringToolSuit4) 
+
+ii. Run as a Spring Boot App
+
+iii. Test RESTful API end points using Postman for CRUD operations:
+
+- Get All Orders
+- Get Order By ID
+- Post Order
+- Put Order
+- Delete Order
+
+## 5. Demo
+
+#### CRUD Operations:
+
+- Get All Orders
+
+![This is an image](src/main/java/com/storeorderfulfilmentapplication/orderfulfilment/images/getallitems.png)
+
+- Get Order By ID
+
+![This is an image](src/main/java/com/storeorderfulfilmentapplication/orderfulfilment/images/getitembyid.png)
+
+- Post Order
+
+![This is an image](src/main/java/com/storeorderfulfilmentapplication/orderfulfilment/images/postitem.png)
+
+- Put Order
+
+![This is an image](src/main/java/com/storeorderfulfilmentapplication/orderfulfilment/images/putitem.png)
+
+- Delete Order
+
+![This is an image](src/main/java/com/storeorderfulfilmentapplication/orderfulfilment/images/deleteitem_cancel.png)
+
+
+![This is an image](src/main/java/com/storeorderfulfilmentapplication/orderfulfilment/images/deleteitem_cancel_1.png)
+
+
+## 6. Contributing:
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change at:
+
+Spring Guide Github Repo: https://github.com/spring-guides/tut-rest.
+
+
+## 7. Original Creator:
 
 Author:  SPRING by VMware Tanzu
 
